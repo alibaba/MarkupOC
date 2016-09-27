@@ -1,0 +1,32 @@
+{
+  "add": {
+    "action": {
+      "params": {
+          "actionType": "addPublicAccount",
+        "indicatiorName": "indicatior",
+        "openButtonName": "btn_open",
+        "addButtonName": "btn_add",
+        "publcId": "{{publcId}}",
+        "sourceId": "{{sourceId}}",
+        "sourceParam": "{{sourceParam}}"
+      }
+    }
+  },
+  "open": {
+    "action": {
+      "params": {
+          "actionType": "link",
+          "actionParam": "http://www.baidu.com"
+      }
+    }
+  },
+  "detail": {
+    "action": {
+      "params": {
+          "actionType": "{{actionType}}",
+        "actionParam": "{{actionParam}}"
+      }
+    }
+  },
+}
+

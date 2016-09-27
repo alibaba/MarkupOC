@@ -1,0 +1,21 @@
+
+//管导:   格式  数据|函数>参数>参数
+
+//1.upcase把内容转为大写
+Name: {{name|upcase}}
+
+//2.choose从两个值里面选择一个
+John is jiggy: {{jiggy|choose>Yes>No}}
+
+//3.pipe和循环的混合使用
+<ul>{{brothers|sort}}<li>{{.|upcase}}</li>{{/brothers}}</ul>
+
+//4.反转数组，并且把数组元素内容长度裁剪为2，超过2的内容用...代替。
+<ul>{{sisters|reverse}}<li>{{name|chop>2}}</li>{{/sisters}}</ul>
+
+//管导的链式调用
+Alias: {{alias|trim|downcase}}
+
+//条件判断  IF and IF/ELSE statements  where expression is a boolean test with optional pipes:
+"{{if brothers}} John has {{brothers|size}} brothers! {{/if}}"
+"{{if children|empty}} John has no kids. {{/if}}"

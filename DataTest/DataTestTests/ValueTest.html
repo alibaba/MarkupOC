@@ -1,0 +1,16 @@
+
+//first example
+Hi, {{name.first}}!
+
+//2
+//你可以用点号操作符来修改对象属性，例子中的.street  就是直接通过. 来取值。
+{{name}} lives at {{addr.street}} in {{addr.city}}.
+
+//3
+//可以使用嵌套标签
+{{name}} lives at {{addr}}{{street}} in {{city}}.{{/addr}}
+
+//4
+//也可以使用混合嵌套
+ZIP: {{addr}}{{zip.main}}-{{zip.ext}}{{/addr}}
+

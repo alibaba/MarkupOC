@@ -1,0 +1,15 @@
+
+//数组可以通过索引的方式获取
+Favorite color: {{colors.0}}
+
+//也可以把索引和属性混合使用
+Best friend: {{friends.0.name}}
+
+//下面是循环的例子
+//If a tag resolves to an array, the array is iterated. A single dot refers to the current iteration context:
+<ul>{{brothers}}<li>{{.}}</li>{{/brothers}}</ul>
+<ul>{{user.contacts}}<li>{{.}}</li>{{/user.contacts}}</ul>
+
+//如果数组里面元素Key一样，并且有多个，那多个元素都会遍历出来
+<ul>{{sisters}}<li>{{name}}</li>{{/sisters}}</ul>
+
