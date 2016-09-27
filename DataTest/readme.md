@@ -11,7 +11,7 @@ Markup is simple and useful Markup Language。it was wirtten by Js and widely us
 3.lots of project use markup ,such as vue.js.
 
 # How to use
-1. import WKMarkup.h 和WKMarkup.m  
+1. import WKMarkup.h and WKMarkup.m  
 2. use the interface. 
 
 ``` -(NSString*) markupWithTemp:(id)tpContent withContent:(id)context withOption:(id)options;```
@@ -50,11 +50,11 @@ data：{
     name: "John Doe",
     brothers: ["Jack", "Joe", "Jim"]
 }<br>
-* ```输出：<ul><li>Jack</li><li>Joe</li><li>Jim</li></ul>```
+* ```output：<ul><li>Jack</li><li>Joe</li><li>Jim</li></ul>```
 
 #### Pipes
 * template：```Name: {{name|upcase}}```
-* 数据：{
+* data：{
     name: "John Doe",
     alias: " J-Do ",
     phone: null,
