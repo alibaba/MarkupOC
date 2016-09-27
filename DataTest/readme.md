@@ -1,7 +1,7 @@
 # Markup for Objective C
 
 Markup is simple and useful Markup Language。it was wirtten by Js and widely used in web. We alse can use it in Native code, So I rewrite it by Objective C . When you write iOS App , you can think about it . 
-[source](http://gitlab.alipay-inc.com/sanyuan.he/markupforOC)
+
 
 # Why use markup
 1.markup is powerful,simple, and lightly
