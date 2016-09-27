@@ -12,7 +12,15 @@ Markup is simple and useful Markup Language。it was wirtten by Js and widely us
 
 # How to use
 1. import WKMarkup.h 和WKMarkup.m  
-2. use the interface.
+2. use the interface. 
+
+``` -(NSString*) markupWithTemp:(id)tpContent withContent:(id)context withOption:(id)options;```
+
+```
+NSDictionary *reDic = [NSJSONSerialization JSONObjectWithData:[self.dataContent dataUsingEncoding:NSUTF8StringEncoding] options:NSJSONReadingMutableLeaves error:&err];
+    
+value = [markup markupWithTemp:self.templateStr withContent:reDic withOption:nil];
+```
 
 # example
 #### value
